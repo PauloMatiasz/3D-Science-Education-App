@@ -1,0 +1,96 @@
+body {
+  background: #f2f2f2;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background: #fff;
+  padding: 40px;
+  margin: 60px auto;
+  max-width: 520px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.input-group {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #444;
+}
+
+input[type="text"],
+.input-email,
+.input-codigo,
+.input-senha {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 1em;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  margin-bottom: 12px;
+  background: #fff;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input[type="text"]:focus,
+.input-email:focus,
+.input-codigo:focus,
+.input-senha:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 0 3px rgba(76,175,80,0.2);
+  outline: none;
+}
+
+.label-email,
+.label-codigo {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #4CAF50;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+  text-shadow: 0 1px 2px #e0e7ff;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: #45a049;
+  transform: translateY(-2px);
+}
+
+.notificacao-erro {
+  background: #fdecea;
+  color: #a94442;
+  border: 1px solid #f5c6cb;
+  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 18px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(169,68,66,0.1);
+}

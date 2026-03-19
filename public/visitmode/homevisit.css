@@ -1,0 +1,270 @@
+ /* Segment base styles */
+    .segment {
+      width: 150px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      overflow: hidden;
+      border: 1px solid #ccc;
+      padding: 10px;
+      background: white;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgb(0 0 0 / 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+    .segment img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 4px;
+    }
+    .segment h3 {
+      margin: 10px 0 0 0;
+      text-align: center;
+      font-size: 1.1rem;
+    }
+
+    /* Expanded styles with overlay */
+    .segment.expanded {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px;
+      max-width: 90vw;
+      max-height: 90vh;
+      background: #f9f9f9;
+      flex-direction: row;
+      gap: 20px;
+      align-items: flex-start;
+      cursor: default;
+      padding: 20px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+      border-radius: 10px;
+      overflow-y: auto;
+      z-index: 1000;
+    }
+    .segment.expanded img {
+      width: 250px;
+      flex-shrink: 0;
+      border-radius: 6px;
+    }
+    .segment .content-details {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    .segment .content-details h3 {
+      margin: 0 0 10px 0;
+      font-size: 1.5rem;
+      text-align: left;
+    }
+    .segment .description {
+      min-height: 60px;
+      margin-bottom: 10px;
+      font-size: 1rem;
+      color: #333;
+      white-space: pre-wrap;
+    }
+    .segment .youtube-link {
+      font-weight: 600;
+      color: #c4302b;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+    .segment .youtube-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Overlay background */
+    #overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0,0,0,0.5);
+      z-index: 900;
+      display: none;
+    }
+
+    /* Container styles */
+    .segments-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+      justify-content: center;
+    }
+
+
+.menu {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 900px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu ul li {
+    margin: 0 15px;
+}
+
+.menu ul li a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    display: block;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.menu ul li a:hover {
+    background-color: #45a049;
+    color: white;
+}
+
+.perfil-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.content-wrapper {
+    background-color:rgb(247, 247, 247);
+    padding: 40px 20px;
+    border-radius: 5px;
+  }
+
+  .segments-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .segment {
+    width: 180px;
+    height: 180px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+
+  .segment:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+  }
+
+  .segment img {
+    width: 120px;
+    height: 120px;
+    border-radius: 6px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+
+  .segment h3 {
+    color: #4CAF50;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+/* Nessa parte estou colocando a responsividade deles tanto para tablet quanto para celulares
+ai vou colocando comentario onde estou mechendo*/
+  img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+.container, .segments-container, .menu {
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-container {
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input, select, textarea, button {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .segment {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  h1, h2, h3 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .menu {
+    padding: 10px;
+  }
+
+  .menu ul li {
+    margin: 5px 0;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
+}
