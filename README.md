@@ -96,7 +96,7 @@ sci3d_db.sql
 
 ## 👨‍💻 Autor
 
-Projeto desenvolvido por **Paulo Matias** como Trabalho de Conclusão de Curso (TCC).
+Projeto desenvolvido por **Paulo Matias** e **Brayan Oliveira** como Trabalho de Conclusão de Curso (TCC).
 
 ---
 
